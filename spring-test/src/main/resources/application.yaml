@@ -1,0 +1,16 @@
+server:  port: 8081
+
+spring: 
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.71.10:3306/spring?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+    
+mybatis: 
+  type-aliases-package: com.demo.springboot.entity
+  #mapper-locations: classpath:mapping/*.xml
+  
+logging:
+  level:    root: info    com.demo.springboot: debug    org.springframework.web: trace
